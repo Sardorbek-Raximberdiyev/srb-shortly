@@ -446,6 +446,10 @@ body {
   color: var(--btn--bg-color);
 }
 
+.correction__link:active {
+  opacity: 0.6;
+}
+
 .correction__img {
   display: block;
 }
