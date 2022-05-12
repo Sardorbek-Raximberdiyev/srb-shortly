@@ -32,11 +32,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-/*
-.box {
-  display: flex;
-  align-items: center;
-} */
 
 .button {
   display: inline-block;
@@ -76,6 +71,14 @@ body {
   margin-right: 45px;
 }
 
+.site-header__icon-link:hover {
+  opacity: 0.8;
+}
+
+.site-header__icon-link:active {
+  opacity: 0.6;
+}
+
 .icon-link__img {
   width: 120px;
   height: 32px;
@@ -103,6 +106,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .sitenav__link:hover {
