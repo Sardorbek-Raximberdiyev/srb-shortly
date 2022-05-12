@@ -315,3 +315,32 @@ body {
   line-height: 26px;
   margin: 0;
 }
+
+
+/* ABOUT */
+
+.site-about {
+  text-align: center;
+  background-image: url(../images/about-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-about__container {
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+.site-about__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.site-about__button {
+  padding: 14px 40px 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.button {
+}
