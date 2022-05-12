@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ftr-color: #fff;
+  --link-color: #bfbfbf;
+  --title-color: #34313d;
+  --text-color: #9e9aa8;
+  --btn--bg-color: #2bd0d0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Poppins", "Arial", sans-serif;
+  color: var(--text-color);
+  background-color: #eff1f7;
+}
