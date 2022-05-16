@@ -341,6 +341,9 @@ body {
 .site-about__title {
   margin-top: 0;
   margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
   color: #fff;
 }
 
