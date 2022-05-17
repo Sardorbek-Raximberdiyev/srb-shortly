@@ -15,7 +15,14 @@
   outline-offset: 3px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -33,14 +40,19 @@ body {
   padding-right: 20px;
 }
 
+
+  /* BUTTON */
+
 .button {
   display: inline-block;
   text-decoration: none;
+  border: 0;
   border-radius: 28px;
   color: var(--ftr-color);
   background-color: var(--btn--bg-color);
   cursor: pointer;
   transition: background-color 0.2s ease;
+  white-space: nowrap;
 }
 
 .button:hover {
@@ -49,6 +61,19 @@ body {
 
 .button:active {
   opacity: 0.8;
+}
+
+.copy-button {
+  width: 103px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 23px;
+  padding: 10px 21px 7px;
+  border-radius: 5px;
+}
+
+.dark-button {
+  background-color: #3A3054;
 }
 
 
@@ -237,15 +262,64 @@ body {
   margin-left: 24px;
 }
 
+.form__copy-link-block {
+  display: none;
+  flex-direction: column;
+}
+
+.form__copy-link-block-remove {
+  display: block;
+}
+
+.form__link-card {
+  display: flex;
+  padding: 16px 24px 16px 32px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form__link-card:first-child {
+  margin-top: 24px;
+}
+
+.form__link-card:not(:first-child) {
+  margin-top: 16px;
+}
+
+.link-card__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 500;
+  color: var(--title-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link-card__link {
+  margin-left: 10px;
+  margin-right: 24px;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+  color: var(--btn--bg-color);
+}
+
 
 /* Advanced Statistics*/
+
 .site-statistics {
-  padding-top: 204px;
+  padding-top: 84px;
   padding-bottom: 120px;
 }
 
 .site-statistics__content {
-  width: 540px;
+  padding-top: 120px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -262,7 +336,9 @@ body {
 }
 
 .site-statistics__text {
-  margin: 0;
+  text-align: center;
+  width: 537px;
+  margin: auto;
   font-size: 18px;
   line-height: 32px;
 }
@@ -341,7 +417,7 @@ body {
 .site-about__title {
   margin-top: 0;
   margin-bottom: 32px;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px;
   font-weight: 700;
   color: #fff;
@@ -391,7 +467,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-right: 100px;
+  margin-right: 101px;
   list-style-type: none;
 }
 
@@ -436,13 +512,13 @@ body {
   margin-bottom: 10px;
 }
 
-.site-footer__correction {
+.correction__block {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
+
 .correction__link {
-  display: inline-flex;
   text-decoration: none;
   color: var(--ftr-color);
   transition: color 0.3s ease;
