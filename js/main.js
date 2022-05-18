@@ -12,7 +12,11 @@ elJsForm.addEventListener('submit', function (evt) {
 
 elJsCopyBlock.addEventListener('click', function (evt) {
   if (evt.target.matches('.copy-button')) {
+
     evt.target.textContent = 'Copied';
+
+    navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
+
 
     evt.target.classList.add('js-copy-button');
     setTimeout((elJsCopyBlock) => {
@@ -21,3 +25,21 @@ elJsCopyBlock.addEventListener('click', function (evt) {
     }, 1000);
   };
 });
+
+
+// const elJsForm = document.querySelector('.js-form');
+// const elFormCopyLinkBlock = document.querySelector('.form__copy-link-block');
+// const elJsCopyBlock = document.querySelector('.js-copy-block');
+// const elCopyButton = document.querySelectorAll('.copy-button');
+
+// elJsForm.addEventListener('submit', function (evt) {
+  // evt.preventDefault();
+
+//   elFormCopyLinkBlock.classList.add('form__copy-link-block-open');
+// });
+
+// elJsCopyBlock.addEventListener('click', function (evt) {
+//   if (evt.target.matches('.copy-button'));
+//   evt.target.textContent = 'Copied';
+//   evt.target.classList.add('js-copy-button');
+// });
