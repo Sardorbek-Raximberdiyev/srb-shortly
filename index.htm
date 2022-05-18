@@ -49,13 +49,13 @@
 
     <!-- FORM -->
 
-    <form class="main-content__form form" action="https://eche.htmlacademy.ru" method="get">
+    <form class="main-content__form js-form" action="https://eche.htmlacademy.ru" method="get">
       <div class="container">
         <div class="form__block">
           <label class="form__label">
-            <input class="form__input" type="url" placeholder="Shorten a link here..." required>
+            <input class="form__input" type="url" placeholder="Shorten a link here..." required name="url" aria-label="url-input">
           </label>
-          <button class="form__button js-form-button button">Shorten It!</button>
+          <button class="form__button js-form-button button" type="submit">Shorten It!</button>
         </div>
       </div>
     </form>
@@ -64,12 +64,14 @@
   <!-- Advanced Statistics -->
 
     <section class="site-statistics">
-      <div class="form__copy-link-block js-form-copy-link-block">
+      <div class="form__copy-link-block js-copy-block">
         <div class="container">
-          <div class="form__link-card link-card">
-            <p class="link-card__text">https://www.frontendmentor.io</p>
-            <a class="link-card__link" href="#">https://rel.ink/k4lKyk</a>
-            <button class="button copy-button">Copy</button>
+          <div class="form__link-card-block link-card-block">
+            <div class="form__link-card link-card">
+              <p class="link-card__text">https://www.frontendmentor.io</p>
+              <a class="link-card__link" href="#">https://rel.ink/k4lKyk</a>
+              <button class="button copy-button">Copy</button>
+            </div>
           </div>
           <div class="form__link-card link-card">
             <p class="link-card__text">https://twitter.com/frontendmentor</p>
